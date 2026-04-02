@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# 🏦 Express Banking System (React + DSA)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview
 
-## Available Scripts
+The **Express Banking System** is a web-based application built using **React.js** that simulates basic banking operations such as account creation, balance checking, and money transfer.
 
-In the project directory, you can run:
+This project demonstrates the use of **Data Structures and Algorithms (DSA)** concepts integrated with a modern frontend framework.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* ✅ Create new bank accounts
+* 💰 Check account balance
+* 🔄 Transfer money between accounts
+* 📊 View all accounts with balances (live dashboard)
+* ❌ Prevent invalid operations:
 
-### `npm test`
+  * Same account transfer
+  * Invalid accounts
+  * Insufficient balance
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧠 Data Structures Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Object (Hash Map)** → Stores accounts and balances
+* *(Conceptually extendable)*:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Linked List → Sequential storage
+  * Binary Search Tree → Efficient searching
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Frontend:** React.js
+* **Language:** JavaScript
+* **Styling:** CSS (custom UI)
+* **Runtime:** Node.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+banking-app/
+│
+├── src/
+│   ├── components/
+│   │   ├── CreateAccount.js
+│   │   ├── CheckBalance.js
+│   │   ├── TransferMoney.js
+│   │   └── AllAccounts.js
+│   │
+│   ├── services/
+│   │   └── Bank.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   └── styles.css
+│
+└── package.json
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ▶️ Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Clone the repository
 
-### Code Splitting
+```
+git clone <your-repo-link>
+cd banking-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. Install dependencies
 
-### Analyzing the Bundle Size
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 3. Run the application
 
-### Making a Progressive Web App
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 💡 How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* The `Bank` class manages all account operations.
+* React components interact with this class to perform actions.
+* State updates dynamically reflect changes in the UI.
+* The right-side dashboard shows live account balances.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ⚠️ Validations Implemented
 
-### `npm run build` fails to minify
+* Prevent transfer to the same account
+* Prevent transfer with insufficient balance
+* Validate account existence
+* Prevent invalid transaction amounts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🎯 Learning Outcomes
+
+* Understanding of **DSA concepts in real-world applications**
+* Building **modular React components**
+* Managing application state using React hooks
+* Designing **user-friendly UI layouts**
+
+---
+
+
+## 👨‍💻 Author
+
+* Sankalp Vyas
+
+---
+
+## 📄 License
+
+This project is developed for academic purposes.
